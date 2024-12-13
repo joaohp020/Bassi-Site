@@ -57,6 +57,10 @@ p.copy {
     font-size: 14px;
 }
 
+.redes a {
+    text-decoration: none !important;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     footer {
         padding: 3rem 15rem;

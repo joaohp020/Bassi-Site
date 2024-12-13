@@ -535,7 +535,8 @@ p.tag {
 
 .ultimas-noticias h4 {
     margin: 10px 0 18px 0;
-    line-height: 26px;
+    line-height: 21px !important;
+    font-size: 17px !important;
 }
 
 .ultimas-noticias p {
@@ -590,7 +591,7 @@ p.tag {
 
     .slide {
         background-size: cover;
-        background-position: top right;
+        /* background-position: top right; */
         display: flex;
         padding: 0 0 0 30px;
     }
@@ -621,7 +622,7 @@ p.tag {
     }
 
     .dobra-tres {
-        padding: 3rem 10px;
+        padding: 7rem 10px;
     }
 
     .indicators {
@@ -638,7 +639,7 @@ p.tag {
 
     .dobra-quatro img {
         width: 90vw;
-        height: 520px;
+        /* height: 520px; */
         background-size: cover;
         background-position: center;
     }
@@ -683,7 +684,7 @@ p.tag {
     }
 
     .dobra-seis {
-        padding: 1rem 15px;
+        padding: 5rem 15px;
     }
 
     .feedbacks {
@@ -754,7 +755,7 @@ p.tag {
     }
 
     .dobra-oito img {
-        width: 72vw;
+        width: 95vw;
         margin: 0 0 3rem 0;
     }
 
@@ -795,12 +796,16 @@ p.tag {
 
     #titulo-dois,
     #titulo-tres {
-        margin: 1rem 0 2rem 0;
+        margin: 1rem 0 1rem 0 !important;
     }
 
     #dois,
     #tres {
-        margin: 3rem 0 0 0;
+        margin: 1rem 0 0 0;
+    }
+
+    .ultimas-noticias h4 {
+        font-size: 17px;
     }
 }
 
