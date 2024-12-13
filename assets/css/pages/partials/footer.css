@@ -1,0 +1,40 @@
+footer {
+    padding: 3rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 15rem;
+    background-color: var(--branco);
+    width: 96.7vw !important;
+    gap: 1rem;
+    left: 2%;
+    position: relative;
+    border-radius: 12px;
+}
+
+.logo-rodape {
+    margin: 0 0 1rem 0;
+}
+
+.menu-rodape {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.menu-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-footer p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+
+@media (min-width: 769px) and (max-width: 1023px) {}
+
+@media (min-width: 1024px) and (max-width: 1366px) {}

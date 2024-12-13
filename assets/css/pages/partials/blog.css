@@ -1,0 +1,21 @@
+.imgCliente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3rem 15rem;
+    background-image: url(../../../../files/img/PageTitleBlog.png);
+    background-position: center;
+    background-size: cover;
+    /* margin: 0 0 0 1rem; */
+    width: 96.7vw !important;
+    gap: 1rem;
+    left: 1%;
+    position: relative;
+    border-radius: 12px;
+    background-color: var(--azul-claro) !important;
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {}
+
+@media (min-width: 1024px) and (max-width: 1366px) {}

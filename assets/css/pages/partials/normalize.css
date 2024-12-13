@@ -1,0 +1,65 @@
+:root {
+    --azul-claro: #F6F9FE;
+    --branco: #fff;
+    --preto: #000;
+    --preto-transparencia: #0000006e;
+    --preto-fosco: #262626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    line-height: auto;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: inherit;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--azul-claro);
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--azul-claro) !important;
+}
+
+section {
+    width: 100vw;
+    background-color: var(--azul-claro) !important;
+}
+
+.btnPrincipal {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--azul-claro);
+    color: var(--preto-fosco);
+    border: 1px solid var(--preto-fosco);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+    border-radius: 10px;
+}
+
+.btnConversar {
+    background-color: #04297A;
+    color: var(--branco);
+    text-decoration: none !important;
+    border-radius: 12px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    font-size: 16px;
+}

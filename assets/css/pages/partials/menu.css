@@ -1,0 +1,135 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: var(--branco) !important;
+    position: absolute;
+    width: 98%;
+    left: 1%;
+    top: 2%;
+    border-radius: 8px;
+    padding: 0 15rem;
+    gap: 1rem;
+    z-index: 999 !important;
+}
+
+#logotipo {
+    width: 100%;
+    max-width: 150px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 3rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--preto-fosco);
+    font-family: "Figtree", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    /* font-style: normal; */
+}
+
+.menu a:hover {
+    font-weight: 400;
+    border-bottom: 2px solid var(--preto-fosco);
+    padding: 0 0 10px 0;
+    margin: 10px 0 0 0;
+}
+
+/* Ocultar o menu desktop em telas menores */
+@media (max-width: 768px) {
+    header {
+        height: 2.5rem;
+        width: 13% !important;
+        left: 3%;
+        top: 2%;
+        padding: 6px 1rem;
+    }
+
+    .menu,
+    .btnPrincipal {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+/* Estilos para o menu mobile */
+.menu-mobile {
+    position: relative;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 3rem;
+    left: 1% !important;
+    background-color: var(--branco);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 10;
+    width: 88vw !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--preto-fosco);
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+}
+
+.close-icon {
+    background: none;
+    border: none;
+    font-size: 18px;
+    align-self: flex-end;
+    cursor: pointer;
+    color: var(--preto-fosco) !important;
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .menu {
+        gap: 1rem;
+        height: 3rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    header {
+        height: 5rem;
+        width: 98%;
+        left: 1%;
+        top: 2%;
+        padding: 0 7rem;
+    }
+
+    .menu {
+        gap: 1rem;
+        height: 3rem;
+    }
+}
