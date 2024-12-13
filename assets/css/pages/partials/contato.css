@@ -1,3 +1,15 @@
+#pagina-contato {
+    margin: 5rem 0 0 0;
+}
+
+.dobra-oito textarea {
+    height: 100px;
+    padding: 10px 0 0 23px;
+    margin: 0 0 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
 @media (min-width: 769px) and (max-width: 1023px) {}
 
 @media (min-width: 1024px) and (max-width: 1366px) {}

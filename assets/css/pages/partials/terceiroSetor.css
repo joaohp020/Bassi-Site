@@ -1,3 +1,57 @@
+.paginas-topo {
+    padding: 0 15rem;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+}
+
+.pagina-descricao {
+    padding: 5rem 15rem;
+}
+
+.pagina-descricao h2 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+}
+
+.pagina-descricao p {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+}
+
+#texto-topo {
+    margin: 0 0 3rem 0;
+}
+
+#texto-direita {
+    margin: 0 0 2rem 7rem;
+}
+
+#texto-direita h4 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.pagina-descricao #servicos {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+    padding: 0 6rem;
+}
+
+#img-dois {
+    margin: 7rem 0 5rem 0;
+}
+
+.topico-descricao {
+    margin: 1rem 0;
+    padding: 0 4rem;
+}
+
 @media (min-width: 769px) and (max-width: 1023px) {}
 
 @media (min-width: 1024px) and (max-width: 1366px) {}

@@ -1,19 +1,13 @@
 .imgCliente {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: row;
-    padding: 3rem 15rem;
-    background-image: url(../../../../files/img/PageTitleBlog.png);
-    background-position: center;
-    background-size: cover;
-    /* margin: 0 0 0 1rem; */
     width: 96.7vw !important;
-    gap: 1rem;
-    left: 1%;
+    left: 3%;
     position: relative;
     border-radius: 12px;
     background-color: var(--azul-claro) !important;
+    margin: 7rem 0 5rem -2rem;
+    overflow: hidden;
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {}
