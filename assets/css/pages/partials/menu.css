@@ -133,3 +133,31 @@ header {
         height: 3rem;
     }
 }
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    header {
+        height: 8rem;
+        border-radius: 18px;
+        padding: 0 30rem;
+    }
+
+    #logotipo {
+        max-width: 230px;
+    }
+
+    .menu {
+        gap: 2rem;
+        height: 6rem;
+    }
+
+    .menu a {
+        font-size: 24px;
+    }
+
+    .btnPrincipal {
+        border: 1px solid var(--preto-fosco);
+        font-size: 20px;
+        padding: 20px 0px;
+        border-radius: 16px;
+    }
+}

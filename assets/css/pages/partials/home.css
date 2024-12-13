@@ -70,6 +70,7 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 1rem;
+    text-decoration: none !important;
 }
 
 /* Indicadores dos slides */
@@ -122,7 +123,9 @@
 
 .cards {
     margin: 1rem 0;
-    width: 100%;
+    width: 100% !important;
+    display: flex;
+    gap: 15px;
 }
 
 /* .box {
@@ -439,13 +442,13 @@ p.tag {
 
 /* Quando ativo (expandido) */
 .faq-toggle.active {
-    background-color: #04297a;
-    border-color: #04297a;
+    /* background-color: #04297a;
+    border-color: #04297a; */
 }
 
-.faq-toggle.active img {
+/* .faq-toggle.active img {
     content: url('files/img/seta-direta-after.png');
-}
+} */
 
 /* Transição suave para a resposta */
 .faq-answer.show {
@@ -530,6 +533,277 @@ p.tag {
     width: 100%;
 }
 
+.ultimas-noticias h4 {
+    margin: 10px 0 18px 0;
+    line-height: 26px;
+}
+
+.ultimas-noticias p {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+.leiaMais {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lerMais {
+    background-color: #EEEFEE;
+    color: #171714;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.user,
+.calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.user img,
+.calendar img {
+    width: 18px !important;
+}
+
+.user p,
+.calendar p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .banner {
+        width: 96.7%;
+        height: 92vh;
+        margin: 0.5rem 0rem 0 6px;
+        border-radius: 12px;
+    }
+
+    .slide {
+        background-size: cover;
+        background-position: top right;
+        display: flex;
+        padding: 0 0 0 30px;
+    }
+
+    .slide-content h2 {
+        font-size: 35px;
+        line-height: 38px;
+        max-width: 95%;
+    }
+
+    .slide-content p {
+        font-size: 19px;
+        max-width: 80%;
+        line-height: 22px;
+    }
+
+    .dobra-dois {
+        height: 5rem;
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+    }
+
+    .cards {
+        margin: 1rem 0;
+        width: 100% !important;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .dobra-tres {
+        padding: 3rem 10px;
+    }
+
+    .indicators {
+        left: 4%;
+    }
+
+    .dobra-quatro {
+        flex-direction: column;
+        padding: 2rem 15px;
+        width: 96.7vw !important;
+        gap: 1rem;
+        left: 1%;
+    }
+
+    .dobra-quatro img {
+        width: 90vw;
+        height: 520px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .dobra-quatro .acoes {
+        gap: 1rem;
+        margin: 1rem 0 0 0;
+        justify-content: space-between;
+    }
+
+    .topico h4 {
+        font-size: 16px;
+    }
+
+    .topico p {
+        font-size: 13px;
+        line-height: 13px;
+        margin: 12px 0 8px 0;
+    }
+
+    .dobra-quatro p.tag {
+        margin: 2rem 0 0 0;
+        font-size: 14px;
+    }
+
+    .dobra-cinco {
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 13px;
+        gap: 14px;
+    }
+
+    .numero h2 {
+        font-size: 25px;
+    }
+
+    .numero p {
+        font-size: 13px;
+        color: #383831;
+        font-family: "Figtree", sans-serif;
+        width: 100%;
+    }
+
+    .dobra-seis {
+        padding: 1rem 15px;
+    }
+
+    .feedbacks {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .feed-um,
+    .feed-dois,
+    .feed-tres {
+        height: 500px;
+        padding: 0 12px;
+    }
+
+    .dobra-seis .descricao {
+        padding: 10px 12px;
+        margin: 0 0 1rem 0;
+    }
+
+    .dobra-seis .descricao p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .dobra-seis .descricao h4 {
+        font-size: 16px;
+    }
+
+    #secao-feedback #acoes-mobile {
+        margin: 2rem 0 !important;
+        padding: 0 0px !important;
+        gap: 12px !important;
+    }
+
+    .dobra-sete {
+        flex-direction: column;
+        padding: 1rem 15px;
+        border-radius: 12px;
+    }
+
+    .dobra-sete .titulo-faq {
+        height: 42px;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .faq-question {
+        padding: 5px 0;
+    }
+
+    .faq-question p {
+        padding-left: 10px;
+        font-size: 14px;
+        width: 89%;
+        line-height: 17px;
+        margin: 0 0 7px 0px;
+    }
+
+    .faq-answer {
+        padding: 0px 14px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .dobra-oito {
+        flex-direction: column-reverse;
+        padding: 3rem 15px;
+    }
+
+    .dobra-oito img {
+        width: 72vw;
+        margin: 0 0 3rem 0;
+    }
+
+    .dobra-oito .topo {
+        gap: 8px;
+        margin: 1rem 0;
+    }
+
+    .dobra-oito .topo h4 {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .dobra-oito .checkbox p {
+        line-height: 15px;
+        margin: -15px 0 28px 0;
+        font-size: 13px;
+    }
+
+    .dobra-nove {
+        padding: 3rem 15px;
+    }
+
+    .dobra-nove .noticias {
+        gap: 12px;
+        overflow-x: scroll;
+    }
+
+    .user img,
+    .calendar img {
+        width: 12px !important;
+    }
+
+    .user p,
+    .calendar p {
+        font-size: 11px;
+    }
+
+    #titulo-dois,
+    #titulo-tres {
+        margin: 1rem 0 2rem 0;
+    }
+
+    #dois,
+    #tres {
+        margin: 3rem 0 0 0;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1023px) {
     header {
         height: 5rem;
@@ -566,6 +840,48 @@ p.tag {
         margin: 3rem 0;
         padding: 0 5rem;
     }
+
+    .dobra-sete {
+        padding: 3rem 5rem;
+        border-radius: 12px;
+    }
+
+    .contato img {
+        width: 100%;
+    }
+
+    .dobra-oito {
+        flex-direction: row;
+        padding: 5rem 5rem;
+        gap: 2rem;
+    }
+
+    .dobra-oito img {
+        width: 44vw;
+    }
+
+    .dobra-nove {
+        padding: 3rem 5rem;
+    }
+
+    .user img,
+    .calendar img {
+        width: 13px !important;
+    }
+
+    .user p,
+    .calendar p {
+        font-size: 10px;
+    }
+
+    .ultimas-noticias h4 {
+        line-height: 17px;
+        font-size: 17px;
+    }
+
+    .ultimas-noticias p {
+        line-height: 16px;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -574,6 +890,23 @@ p.tag {
         line-height: 44px;
         margin-bottom: 1rem;
         max-width: 100%;
+    }
+
+    .dobra-tres {
+        padding: 5rem 6rem;
+    }
+
+    .dobra-quatro {
+        padding: 3rem 6rem;
+    }
+
+    .dobra-quatro .acoes h3 {
+        font-size: 21px;
+    }
+
+    .dobra-quatro .topico p {
+        font-size: 13px;
+        line-height: 16px;
     }
 
     .dobra-cinco {
@@ -588,4 +921,163 @@ p.tag {
         margin: 3rem 0;
         padding: 0 5rem;
     }
+
+    .dobra-sete {
+        padding: 3rem 6rem;
+    }
+
+    .dobra-oito {
+        padding: 5rem 6rem;
+        gap: 2rem;
+    }
+
+    .dobra-oito img {
+        width: 40vw;
+    }
+
+    .dobra-nove {
+        padding: 5rem 6rem;
+    }
+
+    .ultimas-noticias h4 {
+        line-height: 21px;
+        font-size: 19px;
+    }
+
+    .user img,
+    .calendar img {
+        width: 14px !important;
+    }
+
+    .user p,
+    .calendar p {
+        font-size: 11px;
+    }
+
+    .ultimas-noticias p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1430px) {
+    .ultimas-noticias h4 {
+        line-height: 22px;
+        font-size: 19px;
+    }
+
+    .ultimas-noticias p {
+        font-size: 13px;
+    }
+
+    .user img,
+    .calendar img {
+        width: 16px !important;
+    }
+
+    .ultimas-noticias p {
+        font-size: 12px;
+    }
+
+    .dobra-nove {
+        padding: 3rem 15rem;
+    }
+}
+
+@media (min-width: 1431px) and (max-width: 1600px) {
+    .ultimas-noticias h4 {
+        line-height: 26px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .banner {
+        width: 96.7%;
+        height: 83vh;
+        margin: 12.5rem 0rem 0 1rem;
+        border-radius: 18px;
+    }
+
+    .slide {
+        padding: 0 0 0 30rem;
+    }
+
+    .slide-content h2 {
+        font-size: 86px;
+        line-height: 92px;
+        max-width: 75%;
+    }
+
+    .slide-content p {
+        font-size: 39px;
+        max-width: 75%;
+    }
+
+    .slide-content .cta {
+        padding: 1.4rem 5.8rem;
+        border-radius: 15px;
+        font-size: 1.4rem;
+        text-decoration: none !important;
+    }
+
+    .dobra-oito {
+        padding: 5rem 30rem;
+        gap: 5rem;
+    }
+
+    .dobra-nove {
+        padding: 5rem 30rem;
+    }
+
+    .ultimas-noticias h4 {
+        margin: 18px 0 25px 0;
+        line-height: 32px;
+        font-size: 23px;
+    }
+
+    .ultimas-noticias p {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+
+    .lerMais {
+        border-radius: 14px;
+        font-size: 16px;
+    }
+
+    .user p,
+    .calendar p {
+        margin: 0px 0 0px 0 !important;
+        font-size: 15px !important;
+    }
+
+    .user img,
+    .calendar img {
+        width: 16px !important;
+    }
+
+    .dobra-tres {
+        padding: 5rem 45rem;
+    }
+
+    .dobra-quatro {
+        padding: 3rem 45rem;
+    }
+
+    .dobra-quatro img {
+        width: 375px;
+    }
+
+    .dobra-cinco {
+        padding: 5rem 32rem;
+    }
+
+    .dobra-seis {
+        padding: 5rem 35rem;
+    }
+
+    .dobra-sete {
+        padding: 3rem 30rem;
+    }
+
 }

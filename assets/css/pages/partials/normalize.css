@@ -82,3 +82,14 @@ section {
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .imgCliente {
+        height: 12rem;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
