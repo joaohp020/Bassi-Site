@@ -775,6 +775,10 @@ p.tag {
         font-size: 13px;
     }
 
+    .checkbox input {
+        width: 12px;
+    }
+
     .dobra-nove {
         padding: 3rem 15px;
     }
