@@ -66,11 +66,12 @@ p.copy {
         padding: 3rem 15rem;
         flex-direction: column;
         padding: 3rem 15px;
+        gap: 0px;
     }
 
     .menu-rodape {
         flex-direction: column;
-        gap: 35px;
+        gap: 20px;
     }
 
     p.copy {

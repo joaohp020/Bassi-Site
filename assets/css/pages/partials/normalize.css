@@ -83,6 +83,63 @@ section {
     justify-content: center;
 }
 
+.paginas-topo img {
+    width: 100%;
+}
+
+.pagina-descricao {
+    padding: 5rem 20rem !important;
+}
+
+.pagina-descricao h2 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+}
+
+.pagina-descricao p {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+}
+
+.pagina-descricao .acoes {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+    padding: 0 8rem !important;
+}
+
+.titulo-pagina {
+    position: absolute;
+    left: 16%;
+    top: 5rem;
+}
+
+.titulo-pagina h2 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.rota {
+    background-color: var(--branco);
+    width: 72%;
+    padding: 7px 20px;
+    border-radius: 8px;
+}
+
+.rota p {
+    color: #868686;
+    margin: 0px;
+}
+
+.rota p span {
+    color: var(--preto-fosco);
+    font-weight: 500;
+    margin: 0px;
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     .imgCliente {
         height: 12rem;
@@ -91,5 +148,43 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .titulo-pagina {
+        position: absolute;
+        left: 3%;
+        top: 4rem;
+    }
+
+    .titulo-pagina h2 {
+        font-size: 32px;
+    }
+
+    .rota {
+        width: 90%;
+    }
+
+    .rota p {
+        font-size: 14px;
+    }
+
+    .pagina-descricao {
+        padding: 0rem 10px !important;
+    }
+
+    .pagina-descricao p {
+        line-height: 16px;
+        font-size: 14px;
+    }
+
+    .pagina-descricao .acoes {
+        margin: 4rem 0;
+        padding: 0 8px !important;
+    }
+
+    .acoes h3 {
+        font-size: 22px;
+        margin: 0px;
+        line-height: 23px;
     }
 }
