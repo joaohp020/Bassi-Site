@@ -140,6 +140,25 @@ section {
     margin: 0px;
 }
 
+hr.linha {
+    position: relative;
+    left: 15%;
+    width: 67.6%;
+}
+
+#pagina-acoes {
+    display: flex;
+    padding: 5rem 25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagina-acoes span {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+
 @media (min-width: 320px) and (max-width: 768px) {
     .imgCliente {
         height: 12rem;
@@ -168,13 +187,24 @@ section {
         font-size: 14px;
     }
 
+    .imgCliente {
+        left: 1%;
+        border-radius: 14px;
+        margin: 8px 0 2rem 0px !important;
+    }
+
     .pagina-descricao {
-        padding: 0rem 10px !important;
+        padding: 3rem 10px 3rem 10px !important;
     }
 
     .pagina-descricao p {
         line-height: 16px;
         font-size: 14px;
+    }
+
+    .paginas-topo {
+        padding: 0 9px !important;
+        display: flex;
     }
 
     .pagina-descricao .acoes {
@@ -186,5 +216,28 @@ section {
         font-size: 22px;
         margin: 0px;
         line-height: 23px;
+    }
+
+    hr.linha {
+        left: 3%;
+        width: 93.6%;
+    }
+
+    #pagina-acoes {
+        padding: 4rem 10px;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .titulo-pagina {
+        left: 19%;
+        top: 12rem;
+    }
+
+    .rota p {
+        color: #868686;
+        margin: 0px;
+        font-size: 25px;
     }
 }

@@ -1,10 +1,10 @@
-.paginas-topo {
+/* .paginas-topo {
     padding: 0 15rem;
     display: flex;
     justify-content: center !important;
     align-items: center;
     width: 100%;
-}
+} */
 
 .pagina-descricao {
     padding: 5rem 15rem;
@@ -44,12 +44,46 @@
 }
 
 #img-dois {
-    margin: 7rem 0 5rem 0;
+    margin: 3rem 0 5rem 0;
+    padding: 0 15rem;
 }
+
+#img-dois img {
+    margin: 0 0 5rem 0;
+}
+
+#img-dois #texto-topo {
+    margin: 0 0 3rem 5rem;
+}
+
 
 .topico-descricao {
     margin: 1rem 0;
     padding: 0 4rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #texto-direita {
+        margin: 0 0 2rem 0rem;
+    }
+
+    #img-dois {
+        margin: 3rem 0 5rem 0;
+        padding: 0 10px;
+    }
+
+    #img-dois #texto-topo {
+        margin: 0 0 3rem 0rem;
+    }
+
+    #img-dois img {
+        margin: 0 0 3rem 0;
+    }
+
+    .topico-descricao {
+        margin: 1rem 0;
+        padding: 0 0 0 1rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {}

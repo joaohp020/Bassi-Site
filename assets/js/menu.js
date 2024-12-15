@@ -12,3 +12,16 @@ menuToggle.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
     mobileMenu.classList.add("hidden");
 });
+
+
+// Seleciona o header
+const header = document.querySelector("header");
+
+// Adiciona um evento ao scroll da página
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});

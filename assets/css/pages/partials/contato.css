@@ -10,6 +10,17 @@
     border-radius: 12px;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+    #contato .dobra-oito {
+        flex-direction: column;
+        padding: 0rem 15px;
+    }
+
+    #contato .dobra-oito h2 {
+        width: 80%;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1023px) {}
 
 @media (min-width: 1024px) and (max-width: 1366px) {}

@@ -1,39 +1,37 @@
-const slides = document.querySelectorAll('.slide');
-const indicators = document.querySelectorAll('.indicator');
+// Seleção de elementos
+const slides = document.querySelectorAll(".slide");
+const indicators = document.querySelectorAll(".indicator");
 
+// Inicializa o slide ativo
 let currentSlide = 0;
 
-// Função para atualizar o slide ativo
-function updateSlide(index) {
+// Função para mostrar o slide
+function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        indicators[i].classList.remove('active');
         if (i === index) {
-            slide.classList.add('active');
-            indicators[i].classList.add('active');
+            slide.classList.add("active");
+            indicators[i].classList.add("active");
+        } else {
+            slide.classList.remove("active");
+            indicators[i].classList.remove("active");
         }
     });
+    currentSlide = index;
 }
 
-// Função para avançar os slides
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSlide(currentSlide);
-}
-
-// Evento para navegar pelos indicadores
+// Configura os eventos dos indicadores
 indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        currentSlide = index;
-        updateSlide(currentSlide);
+    indicator.addEventListener("click", () => {
+        showSlide(index);
     });
 });
 
-// Avançar os slides automaticamente a cada 5 segundos
-setInterval(nextSlide, 8000);
+// Alternância automática dos slides
+setInterval(() => {
+    const nextSlide = (currentSlide + 1) % slides.length;
+    showSlide(nextSlide);
+}, 5000); // Alterna os slides a cada 5 segundos
 
-// Inicia com o primeiro slide ativo
-updateSlide(currentSlide);
 
 
 // Função para animar os números

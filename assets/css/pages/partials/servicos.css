@@ -1,21 +1,4 @@
-.paginas-topo {
-    padding: 0 15rem;
-    display: flex;
-}
 
-.pagina-descricao {
-    padding: 5rem 15rem;
-}
-
-.pagina-descricao h2 {
-    font-family: "Figtree", sans-serif;
-    font-weight: 600;
-}
-
-.pagina-descricao p {
-    font-family: "Figtree", sans-serif;
-    font-weight: 400;
-}
 
 #texto-um {
     margin: 3rem 0 0 0;
@@ -28,6 +11,17 @@
     justify-content: center;
     margin: 4rem 0;
     padding: 0 6rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #servicos .acoes h3 {
+        font-size: 20px;
+    }
+
+    #servicos #pagina-acoes span {
+        font-size: 23px;
+        font-weight: 500;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {}
