@@ -62,32 +62,38 @@ window.addEventListener('load', animateNumbers);
 
 
 // Seleciona todos os itens da FAQ
-const faqItems = document.querySelectorAll('.faq-item');
+const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
-    const question = item.querySelector('.faq-question');
-    const answer = item.querySelector('.faq-answer');
-    const toggle = item.querySelector('.faq-toggle');
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+    const toggleIcon = item.querySelector("img"); // Seleciona a imagem da seta
 
-    question.addEventListener('click', () => {
-        // Alterna a classe 'active' para o botão
-        toggle.classList.toggle('active');
-
-        // Mostra ou oculta a resposta
-        if (answer.style.display === 'block') {
-            answer.style.display = 'none';
+    question.addEventListener("click", () => {
+        // Alterna a visibilidade da resposta
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            // Atualiza a imagem da seta para a padrão
+            toggleIcon.src = "files/img/seta-direita.png";
         } else {
-            answer.style.display = 'block';
+            answer.style.display = "block";
+            // Atualiza a imagem da seta para a seta expandida
+            toggleIcon.src = "files/img/seta-direita-after.png";
         }
-    });
 
-    // Permite que o botão também seja clicável
-    toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        if (answer.style.display === 'block') {
-            answer.style.display = 'none';
-        } else {
-            answer.style.display = 'block';
-        }
+        // Fecha outros itens da FAQ ao expandir um
+        faqItems.forEach((otherItem) => {
+            if (otherItem !== item) {
+                const otherAnswer = otherItem.querySelector(".faq-answer");
+                const otherIcon = otherItem.querySelector("img");
+                if (otherAnswer) {
+                    otherAnswer.style.display = "none";
+                }
+                if (otherIcon) {
+                    otherIcon.src = "files/img/seta-direita.png";
+                }
+            }
+        });
     });
 });
+

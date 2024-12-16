@@ -411,9 +411,9 @@ p.tag {
     color: var(--preto-fosco);
 }
 
-.faq {
+/* .faq {
     padding: 1rem 0;
-}
+} */
 
 .faq-item {
     /* border-bottom: 1px solid #dcdcdc; */
@@ -450,7 +450,8 @@ p.tag {
 
 /* Botão de seta */
 .faq-toggle {
-    width: 30px;
+    display: none;
+    /* width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
@@ -459,7 +460,7 @@ p.tag {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 0;
+    padding: 0; */
 }
 
 .faq-toggle img {
@@ -468,21 +469,6 @@ p.tag {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Quando ativo (expandido) */
-.faq-toggle.active {
-    /* background-color: #04297a;
-    border-color: #04297a; */
-}
-
-/* .faq-toggle.active img {
-    content: url('files/img/seta-direta-after.png');
-} */
-
-/* Transição suave para a resposta */
-.faq-answer.show {
-    display: block;
-    animation: slideDown 0.3s ease;
-}
 
 @keyframes slideDown {
     from {
@@ -766,6 +752,10 @@ p.tag {
 
     .faq-question {
         padding: 5px 0;
+    }
+
+    .faq-question img {
+        width: 35px;
     }
 
     .faq-question p {
