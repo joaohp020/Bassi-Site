@@ -1,10 +1,11 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="32" height="32" rx="9" fill="#04297A"/>
-<rect x="9" y="8" width="15" height="15" fill="url(#pattern0_337_62)"/>
+<g clip-path="url(#clip0_363_75)">
+<path d="M12.3583 23H9.24777V12.9855H12.3583V23ZM10.8013 11.6194C9.80692 11.6194 9 10.7958 9 9.80134C9 9.32359 9.18978 8.86542 9.5276 8.5276C9.86542 8.18978 10.3236 8 10.8013 8C11.2791 8 11.7373 8.18978 12.0751 8.5276C12.4129 8.86542 12.6027 9.32359 12.6027 9.80134C12.6027 10.7958 11.7958 11.6194 10.8013 11.6194ZM23.9967 23H20.8929V18.125C20.8929 16.9632 20.8694 15.4732 19.2757 15.4732C17.6585 15.4732 17.4107 16.7355 17.4107 18.0413V23H14.3036V12.9855H17.2868V14.3516H17.3304C17.7455 13.5647 18.76 12.7344 20.2734 12.7344C23.4208 12.7344 24 14.8069 24 17.4989V23H23.9967Z" fill="white"/>
+</g>
 <defs>
-<pattern id="pattern0_337_62" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_337_62" transform="scale(0.015625)"/>
-</pattern>
-<image id="image0_337_62" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAArZJREFUeJztmEFLVUEYhp+vLJNo0SYLw0ihRQSFIIFBULapKFu1b1X7oEXgJmrRLwjqB5ibElsFQQmtXEgtjCyiCIy4GaEYSVhvi3sNkc6cGb2nGXGe5f2+ec8771zOmRnIZDKZzMbFfBsl9QH9QDswA4wBY2b2uyJvaSCpW9Jz/ZsJSYdie6wMSV2SagWTX2JW0uHYXivBsfIrmZS0ObbfpiKpz3PySwzE9rwaNjlq/YFaof1J4ApgV6BW+1qMxMIVwNdArZm1GImFK4CxQK3Q/rSRZI3vvA/vJbXG9tx0JB2RNF8y+Z+Sjsf2WhmSeiW9K5j8tKSTsT2uBa+zQOPvfRE4BewBasBT4L6Zfa/OXiaTqRjv+4CYqH7QOgh0Azup71/mgGlgysxCN21/cQYg6VrjoWXUzGywQOMscN5D44WZ3Vkx9hhwBRgAdjjGvgIeAPfM7KPHs/yQ/3H4jUNj0FPj4bIxuyWNeI5bzoKkW5K2+M7RtRWOgqQe4CX1VQ+lFbgOPJa03WdAUgFIOgA8IfwkupITwJCk0ndcSgG0AEPUX3LN4BxwqawppQBOAz1N1rwhaaurIaUAqrhT7KDkC5RSAFVxxlVcDwEsAJ+AxVWOd95VphrAPDAI7DezNjPrANqAo8BooFanpM6iYooBfAF6zeymmX1Y+tHMFs1sHLgA3A3U7CoqpBjAZTN7XVQ0MwFXgc8BmvuKCqkFMAWMlDWZ2TwwHKC7t6iQWgCPGivsw7MA3cJtcWoBTAT0vg3o3VZUSC2AkHP9t4DedRNAyKQWAnoLd5mpBTAb0PujGQ9MLYBfFfUWkloA/50cQGwDsckBxDYQmxxAbAOxyQHENhCbHEBsA7HJAcQ2EJscQGwDsWkpqY8Ckx46NUdtAv97/DnPPqjfB9z27B0P0M1kMpnMhuEP/XsrTLuRtwUAAAAASUVORK5CYII="/>
+<clipPath id="clip0_363_75">
+<rect width="15" height="15" fill="white" transform="translate(9 8)"/>
+</clipPath>
 </defs>
 </svg>
