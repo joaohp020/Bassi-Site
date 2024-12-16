@@ -229,6 +229,12 @@ hr.linha {
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .rota p {
+        font-size: 12px !important;
+    }
+}
+
 @media (min-width: 1921px) and (max-width: 2560px) {
     .titulo-pagina {
         left: 19%;
